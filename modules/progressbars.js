@@ -1,0 +1,12 @@
+export var kontroldiv = document.getElementById('progress-div');
+export var kontrol= document.getElementById('progressbar');
+export var tavukdiv = document.getElementById('tavukdiv');
+export var tavuk = document.getElementById('tavukprogress');
+export var koftediv = document.getElementById('koftediv');
+export var kofte = document.getElementById('kofteprogress');
+export var patatesdiv = document.getElementById('patatesdiv');
+export var patates = document.getElementById('patatesprogress');
+export var koladiv = document.getElementById('koladiv');
+export var kola = document.getElementById('kolaprogress');
+export var hamburgerdiv = document.getElementById('hamburgerdiv');
+export var hamburger = document.getElementById('hamburgerprogress');

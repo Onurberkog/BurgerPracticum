@@ -1,0 +1,93 @@
+#jumbotron {
+    background-color: rgba(255, 242, 197, 255);
+}
+
+body {
+    margin-bottom: 0;
+}
+
+main {
+    background-image: url("./data/images/pixel-art-cheeseburger-seamless-background.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+    background-blend-mode: hue;
+
+}
+
+#canvas {
+    background-image: url("./data/images/bunss.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+    height: 480px;
+    position: relative;
+}
+
+#chicken {
+    display: none;
+    position: absolute;
+    top: 40%;
+    right: 38%;
+    height: 190px;
+}
+
+#patty {
+    display: none;
+    margin-top: 20%;
+    background-image: url("./data/images/kofte.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    right: 37%;
+
+
+}
+
+#tomato {
+    display: none;
+    position: absolute;
+    top: 57%;
+    right: 42%;
+    width: 120px;
+}
+
+#onion {
+    display: none;
+    position: absolute;
+    top: 35%;
+    right: 42%;
+    width: 150px;
+}
+
+#lettuce {
+    display: none;
+    position: absolute;
+    top: 45%;
+    right: 40%;
+    height: 80px;
+}
+
+#pickle {
+    display: none;
+    position: absolute;
+    top: 42%;
+    right: 43%;
+    height: 100px;
+}
+
+#fries {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 70%;
+}
+
+#coke {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 70%;
+}

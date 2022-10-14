@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid py-5 rounded border" id="jumbotron">
+            <h1 class="display-5 fw-bold">Practicum Hamburgere Hoş Geldiniz!</h1>
+            <p class="col-md-8 fs-4">Leziz mi leziz bir Hamburger satmak için ne kadar güzel bir gün!</p>
+            <button class="btn btn-light btn-lg bg-transparent text-dark" type="button" id="siparisButton">Sipariş
+                ver</button>
+            <div class="card border-light float-end w-50 bg-transparent " id="progresall">
+                <div class="progress" id="tavukdiv">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 0%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100" id="tavukprogress">Tavuk Pişiyor</div>
+                </div>
+                <div class="progress" id="koftediv">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100" id="kofteprogress">Köfte Pişiyor</div>
+                </div>
+                <div class="progress" id="patatesdiv">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100" id="patatesprogress">Patatesler Pişiyor</div>
+                </div>
+                <div class="progress" id="koladiv">
+                    <div class="progress-bar bg-dark text-light" role="progressbar" style="width: 25%;"
+                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="kolaprogress">İçecek Hazırlanıyor
+                    </div>
+                </div>
+                <div class="progress" id="hamburgerdiv">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100" id="hamburgerprogress">Hamburger Hazırlanıyor</div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </header>
+    <main class="">
+        <div id="SiparisMenu">
+            <div class="progress" id="progress-div">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar"
+                    style="width: 0%;" id="progressbar"></div>
+            </div>
+
+            <div class="container-fluid px0" id="burger-container">
+                <div class="d-grid gap-2">
+                    <button type="button" name="" id="controll" class="btn btn-secondary">Malzeme Kontrol</button>
+                </div>
+                <br>
+                <div class="row m0 p0">
+                    <div class="col"><button type="button" name="" id="kofteButton"
+                            class="btn btn-danger w-100">Köfte</button>
+                    </div>
+                    <div class="col"><button type="button" name="tvk" id="tavukButton"
+                            class="btn btn-danger w-100">Tavuk</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row m0 p0" id="kofte.pisme">
+                    <div class="col"><button type="button" name="az" id="azKofte" class="btn btn-success w-100">Az
+                            pişmiş</button>
+                    </div>
+                    <div class="col"><button type="button" name="ort" id="ortaKofte" class="btn btn-danger w-100">Orta
+                            pişmiş</button></div>
+                    <div class="col"><button type="button" name="cok" id="cokKofte" class="btn btn-dark w-100">Çok
+                            pişmiş</button></div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container-fluid " id="siparis.dom">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="table-responsive">
+                            <table class="table table-primary " id="table1">
+                                <thead>
+                                    <tr>
+                                        <td scope="row" id="marul.row" class="bg-opacity-50">Marul
+                                            <button type="button" id="marulAdd"
+                                                class="btn float-end bg-transparent">+</button>
+                                            <button type="button" id="marulRemove"
+                                                class="btn float-end bg-transparent">-</button>
+                                        </td>
+
+                                </thead>
+                                <tbody id="tbody1">
+                                    <tr>
+                                    </tr>
+                                    <td scope="row" id="dom.row" class="bg-opacity-50">Domates
+                                        <button type="button" id="domAdd"
+                                            class="btn float-end bg-transparent">+</button>
+                                        <button type="button" id="domRemove"
+                                            class="btn float-end bg-transparent">-</button>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" id="tursu.row" class=" bg-opacity-50"> Turşu
+                                            <button type="button" id="tursuAdd"
+                                                class="btn float-end bg-transparent">+</button>
+                                            <button type="button" id="tursuRemove"
+                                                class="btn float-end bg-transparent">-</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" id="sogan.row" class="bg-opacity-50"> Soğan
+                                            <button type="button" id="soganAdd"
+                                                class="btn float-end bg-transparent">+</button>
+                                            <button type="button" id="soganRemove"
+                                                class="btn float-end bg-transparent">-</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="buttonlar">
+                            <button type="submit" class="btn btn-secondary" id="burgerBtn">Hamburger
+                                Hazırlansın</button>
+                            <button type="button" class="btn bg-transparent" id="patatesBtn"><img
+                                    src="./data/images/fries2.png" alt=""></button>
+                            <button type="button" class="btn bg-transparent" id="kolaBtn"><img
+                                    src="./data/images/kola.png" alt=""></button>
+                            <button type="button" class="btn btn-secondary" id="submitOrder">Ürünler Tepsiye
+                                &#8594;</button>
+
+                            <br>
+                            <div class="d-grid gap-2">
+
+                                <button class="btn btn-success" type="button" id="siparisServis">Sipariş Servis
+                                    Edilsin</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="container-fluid" id="canvas">
+                            <img src="./data/images/chicken.png" id="chicken" alt="">
+                            <img src="./data/images/kofte.png" width="200" height="120" alt="" id="patty">
+                            <img src="./data/images/tomatis.png" alt="" id="tomato">
+                            <img src="./data/images/lettuce.png" id="lettuce" alt="">
+                            <img src="./data/images/onion.png" id="onion" alt="">
+                            <img src="./data/images/pickle.png" id="pickle" alt="">
+                            <img src="./data/images/fries.png" id="fries" alt="">
+                            <img src="./data/images/coke.png" id="coke" alt="">
+
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-3 float-start">
+                        <ul class="list-group bg-opacity-50 group-flush">
+                            <li class="list-group-item"><b>Envanter</b></li>
+                            <li class="list-group-item">Kalan Ekmek =<a id="ekmek"></a> </li>
+                            <li class="list-group-item">Kalan Köfte =<a id="kofte"></a></li>
+                            <li class="list-group-item">Kalan Tavuk =<a id="tavuk"></a></li>
+                            <li class="list-group-item">Kalan Marul =<a id="marul"></a></li>
+                            <li class="list-group-item">Kalan Turşu =<a id="tursu"></a></li>
+                            <li class="list-group-item">Kalan Domates =<a id="domates"></a> </li>
+                            <li class="list-group-item">Kalan Soğan =<a id="sogan"></a></li>
+                            <li class="list-group-item">Kalan Patates =<a id="patates"></a></li>
+                            <li class="list-group-item">Kalan Kola =<a id="kola"></a></li>
+                            <li class="list-group-item">Kalan Sos =<a id="sos"></a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container-fluid bg-light bg-opacity-75">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="https://drive.google.com/file/d/18R6XKeApZS3Voki04BHRChgvKIhD6U2F/view?usp=sharing"
+                        target="_blank" rel="noopener noreferrer"
+                        class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <img src="./data/images/file-person.svg" alt="">
+                    </a>
+
+                    <a class="mb-3 mb-md-0 text-dark"
+                        href="https://drive.google.com/file/d/18R6XKeApZS3Voki04BHRChgvKIhD6U2F/view?usp=sharing">Onur
+                        Berk CERRAHOĞLU</a>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-light" href="https://mobile.twitter.com/onurberkog" target="_blank"
+                            rel="noopener noreferrer"><img src="./data/images/twitter.svg" alt=""></a></li>
+                    <li class="ms-3"><a class="text-light" href="https://www.instagram.com/onurberkog/" target="_blank"
+                            rel="noopener noreferrer"><img src="./data/images/instagram.svg" alt=""></a></li>
+                    <li class="ms-3"><a class="text-light"
+                            href="https://www.linkedin.com/in/onur-berk-cerraho%C4%9Flu-279732245/" target="_blank"
+                            rel="noopener noreferrer"><img src="./data/images/linkedin.svg" alt=""></a></li>
+                </ul>
+            </footer>
+        </div>
+    </main>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+<script>var exports = {};</script>
+<script type="module" src="app.js"></script>
+
+</html>
